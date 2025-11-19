@@ -92,7 +92,7 @@ export default function Dashboard() {
       const res = await fetch(`/api/links/${c}`, { method: 'DELETE' });
       if (res.ok) await load();
       else alert('Delete failed');
-    } catch (err) {
+    } catch {
       alert('Delete failed');
     }
   }
